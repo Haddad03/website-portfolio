@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Elias Al Haddad — software projects, skills, and experience."
+    />
+    <title>Elias Al Haddad — Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand-text">Elias Al Haddad</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggle" class="icon-button" type="button" aria-label="Toggle theme">
+            <span aria-hidden="true">🌙</span>
+          </button>
+          <a class="button button-primary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Science (COOP) • Java • Full-Stack</p>
+            <h1>
+              Hi, I’m <span class="accent">Elias Al Haddad</span>.
+              <br />
+              I build tested, well-structured full-stack software.
+            </h1>
+            <p class="lead">
+              UQAM CS (COOP) student with hands-on experience in Java, Python, SQL, and full-stack web
+              development. Actively seeking a Software Development internship for Summer/Fall 2026.
+            </p>
+            <div class="hero-cta">
+              <a class="button button-primary" href="#projects">View projects</a>
+              <a class="button button-ghost" href="#about">About me</a>
+              <a
+                class="button button-ghost"
+                href="./assets/Elias_Al_HADDAD_Resume.pdf"
+                download
+                aria-label="Download CV (PDF)"
+              >
+                Download CV
+              </a>
+            </div>
+            <ul class="meta-list" aria-label="Quick facts">
+              <li><strong>Location:</strong> Montreal, QC</li>
+              <li><strong>Availability:</strong> Internship (Summer/Fall 2026)</li>
+              <li><strong>Tech:</strong> Java, Python, SQL, Flask, REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" role="group" aria-label="Profile card">
+            <div class="avatar-wrap">
+              <img
+                id="avatarImg"
+                class="avatar"
+                src="./assets/avatar.png"
+                alt="Elias Al Haddad profile photo"
+                loading="lazy"
+              />
+              <div id="avatarFallback" class="avatar-fallback" aria-hidden="true">EAH</div>
+              <span class="avatar-ring" aria-hidden="true"></span>
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-title">What I’m great at</p>
+              <ul class="check-list">
+                <li>Building tested software with OOP and design patterns</li>
+                <li>Designing database-backed features (SQL, PL/SQL)</li>
+                <li>Implementing REST API workflows and validations</li>
+              </ul>
+              <div class="hero-links" aria-label="Links">
+                <a
+                  class="link-pill"
+                  href="https://www.linkedin.com/in/elias-al-haddad"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <a class="link-pill" href="mailto:eliasalhaddad2003@gmail.com">Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div class="section-title">
+            <h2>About</h2>
+            <p class="muted">
+              UQAM CS (COOP) student building tested, well-structured software with strong fundamentals in
+              OOP, databases, and REST APIs.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Summary</h3>
+            <p>
+              Computer Science (COOP) student at UQAM with hands-on experience in Java, Python, SQL, and
+              full-stack web development. Proven ability to build tested, well-structured software through
+              academic projects involving OOP, design patterns, databases, and REST APIs. Actively seeking
+              a Software Development internship for Summer/Fall 2026.
+            </p>
+            <div class="divider"></div>
+            <div class="stats">
+              <div class="stat">
+                <p class="stat-value">Java, Python, SQL</p>
+                <p class="stat-label">Core skills</p>
+              </div>
+              <div class="stat">
+                <p class="stat-value">REST + Databases</p>
+                <p class="stat-label">Backend focus</p>
+              </div>
+              <div class="stat">
+                <p class="stat-value">FR/EN/AR</p>
+                <p class="stat-label">Trilingual</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Education</h3>
+            <p>
+              Universite du Quebec a Montreal (UQAM) — Bachelor’s Degree in Computer Science and Software
+              Engineering (COOP), Jan. 2023 – Apr. 2027
+            </p>
+            <div class="divider"></div>
+            <p class="muted" style="margin: 0 0 10px">Relevant coursework:</p>
+            <ul class="bullet-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Software Engineering</li>
+              <li>Databases</li>
+              <li>Web Programming</li>
+              <li>Software Design</li>
+              <li>Assembly</li>
+              <li>Advanced Web Development</li>
+            </ul>
+            <div class="divider"></div>
+            <p>
+              Lycee Franco-Libanais Habbouche Nabatieh (Lebanon) — French Baccalaureate (Science &
+              Physics/Chemistry), June 2021
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Technical Skills</h3>
+            <p><strong>Languages:</strong> Java, Python, C/C++, SQL, PL/SQL, JavaScript, RISC-V Assembly</p>
+            <p><strong>Web Technologies:</strong> HTML, CSS, Flask, REST APIs, Bootstrap</p>
+            <p><strong>Databases:</strong> Oracle, MySQL, PostgreSQL, SQLite</p>
+            <p><strong>Tools & Frameworks:</strong> Git, GitHub, Maven, JUnit, Eclipse, VS Code</p>
+            <p><strong>Concepts:</strong> OOP, Design Patterns, UML, MVC, Agile/Scrum, Unit Testing, Data Structures & Algorithms</p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Languages</h3>
+            <ul class="bullet-list">
+              <li>French (Native)</li>
+              <li>English (Fluent)</li>
+              <li>Arabic (Fluent)</li>
+              <li>Spanish (Intermediate)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-title section-title-row">
+            <h2>Projects</h2>
+            <p class="muted">Academic projects demonstrating tested software, databases, and full-stack development.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">Halma Game Controller</h3>
+                <span class="tag">Java • MVC • JUnit</span>
+              </div>
+              <p class="project-desc">
+                2025 — Complete game controller with move validation, player move generation, and jump mechanics.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <ul class="bullet-list">
+                  <li>Implemented following MVC architecture (move validation + jump mechanics).</li>
+                  <li>Achieved 90%+ test coverage using JUnit and enforced quality with Checkstyle.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">Auto Insurance Web Application</h3>
+                <span class="tag">Python • Flask • SQLite</span>
+              </div>
+              <p class="project-desc">
+                2025 — Full-stack insurance quote submission system with validation, error handling, and persistence.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <ul class="bullet-list">
+                  <li>POST-Redirect-GET pattern and session management for a clean, secure experience.</li>
+                  <li>Client-side and server-side validation with robust data persistence.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">Enrollment Management Database</h3>
+                <span class="tag">Oracle • PL/SQL</span>
+              </div>
+              <p class="project-desc">
+                2025 — Stored procedures, functions, and triggers to enforce business rules and data integrity.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <ul class="bullet-list">
+                  <li>Included unit testing and security mechanisms for a robust enrollment system.</li>
+                  <li>Designed/implemented DB logic to keep data consistent.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <h3 class="project-title">S-Expression Validator</h3>
+                <span class="tag">RISC-V Assembly</span>
+              </div>
+              <p class="project-desc">
+                2024 — Low-level validator for S-expressions with balanced parenthesis checking and memory optimization.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <ul class="bullet-list">
+                  <li>Balanced parenthesis checking, comment handling, and memory optimization.</li>
+                </ul>
+              </details>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-title section-title-row">
+            <h2>Experience</h2>
+            <p class="muted">Roles and responsibilities from your CV.</p>
+          </div>
+
+          <div class="experience-grid">
+            <article class="card exp-item">
+              <h3 class="card-title">Lead Busboy / Dining Room Attendant</h3>
+              <p class="exp-meta">La Sirene de la Mer (Montreal, QC) — Apr. 2022 – Present</p>
+              <ul class="bullet-list">
+                <li>Coordinated dining room staff during peak hours, demonstrating leadership and time management.</li>
+              </ul>
+            </article>
+
+            <article class="card exp-item">
+              <h3 class="card-title">Parking Enforcement Officer</h3>
+              <p class="exp-meta">City of Montreal – Sustainable Mobility Agency — Nov. 2024 – May 2025</p>
+              <ul class="bullet-list">
+                <li>Enforced municipal regulations using digital tools; issued citations and completed reports via computerized systems.</li>
+              </ul>
+            </article>
+
+            <article class="card exp-item">
+              <h3 class="card-title">Sales Associate</h3>
+              <p class="exp-meta">Best Buy (Montreal, QC) — Sept. 2021 – Jun. 2022</p>
+              <ul class="bullet-list">
+                <li>Provided technical advice and personalized customer support by analyzing needs and recommending appropriate solutions.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container grid-2">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p class="muted">
+              Send a message. This form opens your email client (no backend needed).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Let’s talk</h3>
+            <form id="contactForm" class="form" autocomplete="on">
+              <label class="field">
+                <span class="field-label">Name</span>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Email</span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="eliasalhaddad2003@gmail.com"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Message</span>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+              </label>
+
+              <button class="button button-primary" type="submit">
+                Send message
+              </button>
+
+              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="divider"></div>
+            <div class="contact-links">
+              <a class="link-row" href="mailto:eliasalhaddad2003@gmail.com">eliasalhaddad2003@gmail.com</a>
+              <a class="link-row" href="tel:+15148914654">+1 (514) 891-4654</a>
+              <a
+                class="link-row"
+                href="https://www.linkedin.com/in/elias-al-haddad"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-text">© <span id="year"></span> Elias Al Haddad. Built with plain HTML/CSS/JS.</p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
