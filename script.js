@@ -69,6 +69,85 @@
     });
   }
 
+  // ─── Lightbox ─────────────────────────────────────────────────────────────────
+  const lightbox     = document.getElementById("lightbox");
+  const lightboxImg  = document.getElementById("lightboxImg");
+  const lightboxCap  = document.getElementById("lightboxCaption");
+  const lightboxClose = document.getElementById("lightboxClose");
+  const lightboxPrev = document.getElementById("lightboxPrev");
+  const lightboxNext = document.getElementById("lightboxNext");
+
+  let lbImages = [];
+  let lbIndex  = 0;
+
+  function openLightbox(btns, index) {
+    lbImages = Array.from(btns).map(btn => ({
+      src: btn.querySelector("img").src,
+      alt: btn.querySelector("img").alt,
+    }));
+    lbIndex = index;
+    showLbImage();
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    lightboxClose.focus();
+  }
+
+  function showLbImage() {
+    const { src, alt } = lbImages[lbIndex];
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightboxCap.textContent = alt;
+    lightboxPrev.style.visibility = lbIndex > 0 ? "visible" : "hidden";
+    lightboxNext.style.visibility = lbIndex < lbImages.length - 1 ? "visible" : "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  if (lightbox) {
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightboxPrev.addEventListener("click", () => { lbIndex--; showLbImage(); });
+    lightboxNext.addEventListener("click", () => { lbIndex++; showLbImage(); });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.hidden) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft" && lbIndex > 0) { lbIndex--; showLbImage(); }
+      if (e.key === "ArrowRight" && lbIndex < lbImages.length - 1) { lbIndex++; showLbImage(); }
+    });
+
+    document.querySelectorAll(".ww-gallery-btn").forEach((btn, i, all) => {
+      btn.addEventListener("click", () => openLightbox(all, i));
+    });
+  }
+
+  // ─── WealthWise expand / collapse ────────────────────────────────────────────
+  const wwToggle = document.getElementById("wwToggle");
+  const wwCollapse = document.getElementById("wwCollapse");
+  const wwDetails = document.getElementById("wwDetails");
+
+  if (wwToggle && wwDetails) {
+    wwToggle.addEventListener("click", () => {
+      wwDetails.hidden = false;
+      wwToggle.textContent = "Details open ↑";
+      wwDetails.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  if (wwCollapse && wwDetails) {
+    wwCollapse.addEventListener("click", () => {
+      wwDetails.hidden = true;
+      wwToggle.textContent = "View full details ↓";
+      document.getElementById("wealthwise").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
   // ============================================================
   // SCROLL PROGRESS BAR
   // ============================================================

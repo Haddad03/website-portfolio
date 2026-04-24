@@ -772,6 +772,311 @@ html[data-theme="light"] .stat {
   white-space: nowrap;
 }
 
+.tag-hackathon {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+}
+html[data-theme="light"] .tag-hackathon {
+  color: #16a34a;
+}
+
+/* ─── WealthWise section ─────────────────────────────────────────────────────── */
+
+/* Compact row */
+.ww-compact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.ww-title {
+  margin: 12px 0 10px;
+  font-size: 2rem;
+}
+
+.ww-stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ww-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Stacked screenshot preview */
+.ww-screenshots-preview {
+  position: relative;
+  height: 220px;
+}
+
+.ww-thumb {
+  position: absolute;
+  width: 88%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: top;
+}
+
+.ww-thumb-back {
+  top: 16px;
+  right: 0;
+  transform: rotate(2deg);
+  opacity: 0.7;
+}
+
+.ww-thumb-front {
+  top: 0;
+  left: 0;
+  transform: rotate(-1.5deg);
+  z-index: 1;
+}
+
+/* Expanded details */
+.ww-details {
+  margin-top: 32px;
+}
+
+/* Screenshot gallery */
+.ww-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ww-gallery-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ww-gallery-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: zoom-in;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ww-gallery-btn img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16 / 10;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ww-gallery-btn:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.ww-gallery-btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* ─── Lightbox ───────────────────────────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-img {
+  max-width: min(1100px, 92vw);
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.lightbox-close:focus-visible,
+.lightbox-prev:focus-visible,
+.lightbox-next:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.ww-gallery-item figcaption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Detail cards grid */
+.ww-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ww-overview {
+  grid-column: span 2;
+}
+
+.ww-meta-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ww-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ww-meta-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ww-meta-value {
+  font-weight: 650;
+}
+
+.ww-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.ww-feature-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.ww-feature-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ww-feature-list p {
+  margin: 2px 0 0;
+  font-size: 0.92rem;
+}
+
+.inline-code {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", monospace;
+  font-size: 0.85em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1px 5px;
+}
+
+@media (max-width: 980px) {
+  .ww-compact {
+    grid-template-columns: 1fr;
+  }
+  .ww-screenshots-preview {
+    height: 180px;
+  }
+  .ww-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ww-grid {
+    grid-template-columns: 1fr;
+  }
+  .ww-overview {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .ww-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-desc {
   margin: 10px 0 14px;
   color: var(--muted);

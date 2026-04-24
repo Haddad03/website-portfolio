@@ -32,6 +32,7 @@
         <nav class="nav" aria-label="Primary navigation">
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#wealthwise">WealthWise</a>
           <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
@@ -341,7 +342,197 @@
                 </ul>
               </details>
             </article>
+
           </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           WEALTHWISE
+           ==================================================== -->
+      <section id="wealthwise" class="section">
+        <div class="container">
+
+          <!-- Compact view (always visible) -->
+          <div class="ww-compact reveal">
+            <div class="ww-compact-left">
+              <span class="tag tag-hackathon">Hackathon &mdash; Claude Builders @ McGill</span>
+              <h2 class="ww-title">WealthWise 💰</h2>
+              <p class="lead" style="margin: 0 0 20px;">
+                AI-powered financial tools for young Canadians — built with Next.js 16, Claude Sonnet, and Tailwind CSS v4.
+              </p>
+              <div class="ww-stack-pills">
+                <span class="skill-tag web">Next.js 16</span>
+                <span class="skill-tag lang">Anthropic SDK</span>
+                <span class="skill-tag web">Tailwind v4</span>
+                <span class="skill-tag tool">Zustand</span>
+                <span class="skill-tag web">Recharts</span>
+                <span class="skill-tag lang">TypeScript</span>
+              </div>
+              <div class="ww-actions">
+                <button class="button button-primary ww-toggle-btn" id="wwToggle" aria-expanded="false">
+                  View full details ↓
+                </button>
+                <a class="button button-ghost" href="https://wealthwise-app-dev.vercel.app" target="_blank" rel="noreferrer">
+                  🌐 Live demo
+                </a>
+                <a class="button button-ghost" href="https://github.com/Haddad03/WealthWise" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="ww-screenshots-preview">
+              <img class="ww-thumb ww-thumb-back" src="./assets/ww-dashboard.png" alt="WealthWise dashboard" loading="lazy" />
+              <img class="ww-thumb ww-thumb-front" src="./assets/ww-landing.png" alt="WealthWise landing page" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Expanded details (hidden by default) -->
+          <div class="ww-details" id="wwDetails" hidden>
+
+            <!-- Screenshot gallery -->
+            <div class="ww-gallery">
+              <figure class="ww-gallery-item">
+                <button class="ww-gallery-btn" aria-label="View landing page full size">
+                  <img src="./assets/ww-landing.png" alt="WealthWise landing page" loading="lazy" />
+                </button>
+                <figcaption>Landing page</figcaption>
+              </figure>
+              <figure class="ww-gallery-item">
+                <button class="ww-gallery-btn" aria-label="View login screen full size">
+                  <img src="./assets/ww-login.png" alt="WealthWise login screen" loading="lazy" />
+                </button>
+                <figcaption>Login screen</figcaption>
+              </figure>
+              <figure class="ww-gallery-item">
+                <button class="ww-gallery-btn" aria-label="View upload page full size">
+                  <img src="./assets/ww-upload.png" alt="WealthWise upload statement" loading="lazy" />
+                </button>
+                <figcaption>Upload statement</figcaption>
+              </figure>
+              <figure class="ww-gallery-item">
+                <button class="ww-gallery-btn" aria-label="View dashboard full size">
+                  <img src="./assets/ww-dashboard.png" alt="WealthWise spending dashboard" loading="lazy" />
+                </button>
+                <figcaption>Spending dashboard</figcaption>
+              </figure>
+            </div>
+
+            <div class="ww-grid">
+              <!-- Overview -->
+              <div class="card ww-overview">
+                <h3 class="card-title">Overview</h3>
+                <p>
+                  WealthWise is a full-stack web app built at the <strong>Claude Builders Hackathon @ McGill</strong>.
+                  It helps young Canadians take control of their finances through AI-powered transaction categorization,
+                  spending analysis, tax simulation, and wealth growth projections.
+                </p>
+                <div class="divider"></div>
+                <div class="ww-meta-grid">
+                  <div class="ww-meta-item">
+                    <span class="ww-meta-label">Event</span>
+                    <span class="ww-meta-value">Claude Builders Hackathon @ McGill</span>
+                  </div>
+                  <div class="ww-meta-item">
+                    <span class="ww-meta-label">Year</span>
+                    <span class="ww-meta-value">2025</span>
+                  </div>
+                  <div class="ww-meta-item">
+                    <span class="ww-meta-label">AI Model</span>
+                    <span class="ww-meta-value">Claude Sonnet (Anthropic SDK)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Stack -->
+              <div class="card">
+                <h3 class="card-title">Tech Stack</h3>
+                <p class="skill-group-label">Frontend</p>
+                <div class="skill-tags">
+                  <span class="skill-tag web">Next.js 16</span>
+                  <span class="skill-tag web">React</span>
+                  <span class="skill-tag web">Tailwind CSS v4</span>
+                  <span class="skill-tag web">shadcn/ui</span>
+                  <span class="skill-tag web">Recharts</span>
+                </div>
+                <div class="divider"></div>
+                <p class="skill-group-label">Backend &amp; AI</p>
+                <div class="skill-tags">
+                  <span class="skill-tag lang">Anthropic SDK</span>
+                  <span class="skill-tag lang">Next.js API Routes</span>
+                  <span class="skill-tag lang">TypeScript</span>
+                </div>
+                <div class="divider"></div>
+                <p class="skill-group-label">State &amp; Parsing</p>
+                <div class="skill-tags">
+                  <span class="skill-tag tool">Zustand</span>
+                  <span class="skill-tag tool">PapaParse</span>
+                  <span class="skill-tag tool">localStorage</span>
+                </div>
+              </div>
+
+              <!-- Features -->
+              <div class="card">
+                <h3 class="card-title">Key Features</h3>
+                <ul class="ww-feature-list">
+                  <li>
+                    <span class="ww-feature-icon" aria-hidden="true">🤖</span>
+                    <div>
+                      <strong>AI Categorization</strong>
+                      <p class="muted">Claude automatically categorizes uploaded bank transactions by spending type.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="ww-feature-icon" aria-hidden="true">📊</span>
+                    <div>
+                      <strong>Spending Dashboard</strong>
+                      <p class="muted">Interactive pie charts and overview cards break down expenses by category.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="ww-feature-icon" aria-hidden="true">💡</span>
+                    <div>
+                      <strong>AI Suggestions</strong>
+                      <p class="muted">Claude analyzes spending patterns and generates personalized savings tips.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="ww-feature-icon" aria-hidden="true">📈</span>
+                    <div>
+                      <strong>Wealth Growth Projections</strong>
+                      <p class="muted">Visualize long-term investment growth with compound interest modeling.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="ww-feature-icon" aria-hidden="true">🧾</span>
+                    <div>
+                      <strong>Canadian Tax Simulator</strong>
+                      <p class="muted">Estimates federal &amp; provincial income tax across all Canadian provinces.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Architecture -->
+              <div class="card">
+                <h3 class="card-title">Architecture Highlights</h3>
+                <ul class="bullet-list">
+                  <li>App Router with strict client/server separation — Claude API key never exposed to the browser.</li>
+                  <li>Two API routes (<code class="inline-code">/api/categorize</code> and <code class="inline-code">/api/suggestions</code>) handle all Anthropic SDK calls server-side.</li>
+                  <li>Global state via Zustand + <code class="inline-code">persist</code> middleware keeps transactions across sessions.</li>
+                  <li>CSV bank statements parsed client-side with PapaParse; mock generator included for demo mode.</li>
+                  <li>Tailwind CSS v4 configured entirely in CSS — no <code class="inline-code">tailwind.config.ts</code> needed.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 16px;">
+              <button class="button button-ghost ww-toggle-btn" id="wwCollapse">
+                Collapse ↑
+              </button>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -443,6 +634,15 @@
         </div>
       </section>
     </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
 
     <footer class="footer">
       <div class="container footer-inner">
