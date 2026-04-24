@@ -848,7 +848,7 @@ html[data-theme="light"] .tag-hackathon {
 /* Screenshot gallery */
 .ww-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -1061,7 +1061,7 @@ html[data-theme="light"] .tag-hackathon {
     height: 180px;
   }
   .ww-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .ww-grid {
     grid-template-columns: 1fr;
